@@ -37,7 +37,6 @@ public class Tableroa extends JFrame{
 	public Tableroa(int zailtasuna){
 		this.zailtasuna=zailtasuna;
 		try    {
-			System.out.println("tablaroa hasieratu");
 			this.getContentPane().setLayout(new BorderLayout());
 			this.setTitle("Dragamina");
 

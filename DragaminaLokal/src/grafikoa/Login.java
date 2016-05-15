@@ -75,7 +75,6 @@ public class Login extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				izena= user.getText();
-				System.out.println(user.getText() + " erabiltzailea jokatzen ari da");
 					if (comboBox.getSelectedItem().toString()=="Erraza"){
 					textArea.setText("Kaixo " + user.getText() + " aukera erraza hartu duzu.");
 					Tableroa tableroa = new Tableroa(1);

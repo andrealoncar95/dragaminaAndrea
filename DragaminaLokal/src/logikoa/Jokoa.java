@@ -185,7 +185,6 @@ public class Jokoa {
 			int minutuak=(int)denbora/60;
 			int segunduak=(int) denbora%60;
 			String puntuazioa= Integer.toString(minutuak)+":"+Integer.toString(segunduak);
-			System.out.println(jokalaria.jokalariaDago(jokalaria.getIzena()));
 			if (!jokalaria.jokalariaDago(jokalaria.getIzena())){
 				jokalaria.jokalariaSartu(jokalaria.getIzena(), puntuazioa);
 			}else{

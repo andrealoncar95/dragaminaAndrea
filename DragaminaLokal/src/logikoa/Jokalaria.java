@@ -25,9 +25,6 @@ public class Jokalaria {
 		return denbora;
 	}
 	
-	public void inprimatu(){
-		System.out.println("Izena: " +getIzena()+ " Denbora: "+ getDenbora());
-	}
 	
 	public boolean jokalariaDago(String pIzena) {
 		String query= "SELECT izena FROM jokalariak where izena='"+pIzena+"';";
@@ -42,7 +39,6 @@ public class Jokalaria {
 	
 	public void denboraEguneratu(String pIzena, String denbora) {
 		String query= "UPDATE jokalariak set denbora='"+denbora+"' where izena='"+pIzena+"';";
-		System.out.println(query);
 		try{
 			myData.executeUpdate(query);
 			
@@ -53,10 +49,8 @@ public class Jokalaria {
 	
 	public void jokalariaSartu(String pIzena, String denbora){
 		String query= "INSERT into jokalariak values ('0','"+pIzena+"','"+denbora+"');";
-		System.out.println(query);
 		try{
 			myData.executeUpdate(query);
-			System.out.println("insert");
 		}
 		catch(Exception e){
 			e.printStackTrace();

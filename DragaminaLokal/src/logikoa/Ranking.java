@@ -38,18 +38,7 @@ public class Ranking {
 		}
 	}
 
-	
-	public void rankingErakutzi(){
-		Iterator<Jokalaria> i = getIterator();
-		int k=0;
-		Jokalaria j= null;
-		while(i.hasNext() && k<10){
-			j= i.next();
-			System.out.print(k+1 + ". ");
-			j.inprimatu();
-			k++;
-		}
-	}
+
 	
 	public String rankinaBueltatu() {
 		Iterator<Jokalaria> i = getIterator();

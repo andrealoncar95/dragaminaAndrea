@@ -25,8 +25,8 @@ public class Data {
 		//Open connection
 		
 		try{
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dragamina", 
-					"root", "euiti");
+			conn = DriverManager.getConnection("jdbc:mysql://dbserver1516-xbh1uxaq.cloudapp.net:3306/dragamina", 
+					"labo5", "euiti");
 			st = conn.createStatement();
 		}catch (SQLException e){
 			e.printStackTrace();

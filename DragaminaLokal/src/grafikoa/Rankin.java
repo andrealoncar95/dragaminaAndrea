@@ -48,7 +48,6 @@ public class Rankin extends JFrame {
 		Ranking.getRanking().rankingSortu();
 		txtArea.setText(Ranking.getRanking().rankinaBueltatu());
 		txtArea.setEditable(false);
-		Ranking.getRanking().rankingErakutzi();
 	}
 
 }
